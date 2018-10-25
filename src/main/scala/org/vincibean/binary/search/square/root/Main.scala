@@ -28,8 +28,12 @@ object Main {
       }
     }
 
+    def inverse(d: Double): Double = 1 / d
+
     if (d < 0) {
       Double.NaN
+    } else if (d < 1) {
+      inverse(sqrt(inverse(d)))
     } else {
       loop(0, d)
     }
