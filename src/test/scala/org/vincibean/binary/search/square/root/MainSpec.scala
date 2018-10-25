@@ -11,6 +11,7 @@ class MainSpec extends Specification {
           return NaN for invalid numbers ${ Main.sqrt(-1D).isNaN must beTrue }
           return ~1 when 1.0 is given ${ (Main.sqrt(1.0) ~= 1.0) must beTrue }
           return ~2 when 4.0 is given ${ (Main.sqrt(4.0) ~= 2.0) must beTrue }
+          return ~0 when 0.0 is given ${ (Main.sqrt(0.0) ~= 0.0) must beTrue }
           return ~4 when 16.0 is given ${ (Main.sqrt(16.0) ~= 4.0) must beTrue }
           return ~31.622776 when 1000 is given ${ (Main.sqrt(1000.0) ~= Math.sqrt(1000.0)) must beTrue }
           return ~1000 when 1000000 is given ${ (Main.sqrt(1000000.0) ~= Math.sqrt(1000000.0)) must beTrue }

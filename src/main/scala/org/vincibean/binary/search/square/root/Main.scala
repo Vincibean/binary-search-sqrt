@@ -14,6 +14,7 @@ object Main {
   val epsilon: Double = 0.000000001
 
   def sqrt(d: Double): Double = {
+    def inverse(d: Double): Double = 1 / d
 
     @tailrec
     def loop(min: Double, max: Double): Double = {
@@ -27,8 +28,6 @@ object Main {
         loop(mean, max)
       }
     }
-
-    def inverse(d: Double): Double = 1 / d
 
     if (d < 0) {
       Double.NaN
