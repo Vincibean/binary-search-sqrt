@@ -1,4 +1,4 @@
-# Square Root Calculation via Binary Search
+# Square Root Calculation via Binary Search in Scala
 Given a double, find the square root of it. 
 
 We cannot use any pre-baked method.
